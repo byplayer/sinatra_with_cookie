@@ -3,7 +3,7 @@ require 'sinatra/cookies'
 
 get '/' do
   response.set_cookie(:test,
-                      value: 'micky',
+                      value: 'test_val',
                       expires: (Time.now + (24 * 60 * 60)))
   'hello'
 end
