@@ -11,6 +11,6 @@ get '/read' do
 end
 
 get '/del_cookie' do
-  response.delete_cookie :test
+  response.delete_cookie 'test'
   'deleted'
 end
